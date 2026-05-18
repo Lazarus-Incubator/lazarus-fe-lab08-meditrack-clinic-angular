@@ -1,0 +1,143 @@
+{
+  "users": [
+    { "id": "u-admin", "fullName": "Administrador MediTrack", "email": "admin@meditrack.pe", "password": "Admin123*", "role": "ADMIN", "active": true },
+    { "id": "u-recepcion", "fullName": "Rosa Cabrera", "email": "recepcion@meditrack.pe", "password": "Admin123*", "role": "RECEPCION", "active": true },
+    { "id": "u-enfermeria", "fullName": "Luis Salazar", "email": "enfermeria@meditrack.pe", "password": "Admin123*", "role": "ENFERMERIA", "active": true },
+    { "id": "u-valeria", "fullName": "Dra. Valeria Medina", "email": "dra.valeria@meditrack.pe", "password": "Admin123*", "role": "MEDICO", "active": true },
+    { "id": "u-rios", "fullName": "Dr. Mateo Rios", "email": "dr.rios@meditrack.pe", "password": "Admin123*", "role": "MEDICO", "active": true },
+    { "id": "u-lab", "fullName": "Equipo Laboratorio", "email": "laboratorio@meditrack.pe", "password": "Admin123*", "role": "LABORATORIO", "active": true },
+    { "id": "u-farmacia", "fullName": "Equipo Farmacia", "email": "farmacia@meditrack.pe", "password": "Admin123*", "role": "FARMACIA", "active": true },
+    { "id": "u-caja", "fullName": "Equipo Caja", "email": "caja@meditrack.pe", "password": "Admin123*", "role": "CAJA", "active": true },
+    { "id": "u-auditor", "fullName": "Andrea Torres", "email": "auditor@meditrack.pe", "password": "Admin123*", "role": "AUDITOR", "active": true }
+  ],
+  "specialties": [
+    { "id": "s-med", "name": "Medicina general", "active": true },
+    { "id": "s-card", "name": "Cardiologia", "active": true },
+    { "id": "s-ped", "name": "Pediatria", "active": true },
+    { "id": "s-derm", "name": "Dermatologia", "active": true }
+  ],
+  "doctors": [
+    { "id": "d-valeria", "fullName": "Dra. Valeria Medina", "specialtyId": "s-med", "active": true, "userId": "u-valeria" },
+    { "id": "d-rios", "fullName": "Dr. Mateo Rios", "specialtyId": "s-card", "active": true, "userId": "u-rios" },
+    { "id": "d-luna", "fullName": "Dra. Camila Luna", "specialtyId": "s-ped", "active": true },
+    { "id": "d-vargas", "fullName": "Dr. Tomas Vargas", "specialtyId": "s-derm", "active": true }
+  ],
+  "patients": [
+    { "id": "p-001", "documentNumber": "45678901", "fullName": "Maria Quispe Ramos", "birthDate": "1988-04-12", "gender": "F", "phone": "987111222", "email": "maria@example.test", "address": "Av. Los Olivos 123", "active": true, "createdAt": "2026-05-01T09:00:00.000Z" },
+    { "id": "p-002", "documentNumber": "40785612", "fullName": "Jorge Alvarez Soto", "birthDate": "1979-11-02", "gender": "M", "phone": "987222333", "email": "jorge@example.test", "address": "Jr. Lima 455", "active": true, "createdAt": "2026-05-02T09:00:00.000Z" },
+    { "id": "p-003", "documentNumber": "70011223", "fullName": "Lucia Fernandez Mora", "birthDate": "1995-02-20", "gender": "F", "phone": "987333444", "email": "lucia@example.test", "address": "Calle Sur 90", "active": true, "createdAt": "2026-05-03T09:00:00.000Z" },
+    { "id": "p-004", "documentNumber": "61234578", "fullName": "Carlos Huaman Vega", "birthDate": "1968-09-15", "gender": "M", "phone": "987444555", "email": "carlos@example.test", "address": "Av. Central 721", "active": true, "createdAt": "2026-05-04T09:00:00.000Z" },
+    { "id": "p-005", "documentNumber": "73555111", "fullName": "Elena Paredes Ruiz", "birthDate": "2001-06-30", "gender": "F", "phone": "987555666", "email": "elena@example.test", "address": "Jr. Norte 18", "active": true, "createdAt": "2026-05-05T09:00:00.000Z" },
+    { "id": "p-006", "documentNumber": "50123456", "fullName": "Rafael Campos Diaz", "birthDate": "1982-01-08", "gender": "M", "phone": "987666777", "email": "rafael@example.test", "address": "Av. Pacifico 44", "active": true, "createdAt": "2026-05-06T09:00:00.000Z" },
+    { "id": "p-007", "documentNumber": "49888777", "fullName": "Sofia Castro Leon", "birthDate": "2010-12-25", "gender": "F", "phone": "987777888", "email": "sofia@example.test", "address": "Calle Flores 51", "active": true, "createdAt": "2026-05-07T09:00:00.000Z" },
+    { "id": "p-008", "documentNumber": "45555000", "fullName": "Miguel Rojas Pena", "birthDate": "1975-05-18", "gender": "M", "phone": "987888999", "email": "miguel@example.test", "address": "Av. Salud 300", "active": true, "createdAt": "2026-05-08T09:00:00.000Z" },
+    { "id": "p-009", "documentNumber": "76666000", "fullName": "Ana Molina Flores", "birthDate": "1992-07-11", "gender": "F", "phone": "987999000", "email": "ana@example.test", "address": "Jr. Centro 12", "active": true, "createdAt": "2026-05-09T09:00:00.000Z" },
+    { "id": "p-010", "documentNumber": "43333222", "fullName": "Pedro Salinas Rios", "birthDate": "1959-03-04", "gender": "M", "phone": "987000111", "email": "pedro@example.test", "address": "Av. Norte 640", "active": false, "createdAt": "2026-05-10T09:00:00.000Z" }
+  ],
+  "appointments": [
+    { "id": "a-001", "patientId": "p-001", "doctorId": "d-valeria", "specialtyId": "s-med", "scheduledAt": "2026-05-19T09:00:00.000Z", "reason": "Control general", "status": "SCHEDULED", "createdByUserId": "u-recepcion", "createdAt": "2026-05-16T10:00:00.000Z", "updatedAt": "2026-05-16T10:00:00.000Z" },
+    { "id": "a-002", "patientId": "p-002", "doctorId": "d-valeria", "specialtyId": "s-med", "scheduledAt": "2026-05-18T15:00:00.000Z", "reason": "Dolor abdominal", "status": "CHECKED_IN", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-18T14:45:00.000Z", "createdAt": "2026-05-15T10:00:00.000Z", "updatedAt": "2026-05-18T14:45:00.000Z" },
+    { "id": "a-003", "patientId": "p-003", "doctorId": "d-valeria", "specialtyId": "s-med", "scheduledAt": "2026-05-18T16:00:00.000Z", "reason": "Cefalea", "status": "TRIAGE_DONE", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-18T15:40:00.000Z", "createdAt": "2026-05-15T11:00:00.000Z", "updatedAt": "2026-05-18T15:50:00.000Z" },
+    { "id": "a-004", "patientId": "p-004", "doctorId": "d-rios", "specialtyId": "s-card", "scheduledAt": "2026-05-18T10:30:00.000Z", "reason": "Palpitaciones", "status": "IN_CONSULTATION", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-18T10:10:00.000Z", "createdAt": "2026-05-13T11:00:00.000Z", "updatedAt": "2026-05-18T10:40:00.000Z" },
+    { "id": "a-005", "patientId": "p-005", "doctorId": "d-luna", "specialtyId": "s-ped", "scheduledAt": "2026-05-17T11:00:00.000Z", "reason": "Fiebre", "status": "DOCTOR_COMPLETED", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-17T10:45:00.000Z", "createdAt": "2026-05-12T09:00:00.000Z", "updatedAt": "2026-05-17T12:00:00.000Z" },
+    { "id": "a-006", "patientId": "p-006", "doctorId": "d-rios", "specialtyId": "s-card", "scheduledAt": "2026-05-17T14:00:00.000Z", "reason": "Control presion", "status": "PENDING_PAYMENT", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-17T13:45:00.000Z", "createdAt": "2026-05-12T10:00:00.000Z", "updatedAt": "2026-05-17T15:20:00.000Z" },
+    { "id": "a-007", "patientId": "p-007", "doctorId": "d-luna", "specialtyId": "s-ped", "scheduledAt": "2026-05-16T09:00:00.000Z", "reason": "Control pediatrico", "status": "PAID", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-16T08:45:00.000Z", "createdAt": "2026-05-10T09:00:00.000Z", "updatedAt": "2026-05-16T11:20:00.000Z" },
+    { "id": "a-008", "patientId": "p-008", "doctorId": "d-vargas", "specialtyId": "s-derm", "scheduledAt": "2026-05-15T09:30:00.000Z", "reason": "Dermatitis", "status": "CLOSED", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-15T09:10:00.000Z", "createdAt": "2026-05-09T09:00:00.000Z", "updatedAt": "2026-05-15T12:00:00.000Z" },
+    { "id": "a-009", "patientId": "p-009", "doctorId": "d-valeria", "specialtyId": "s-med", "scheduledAt": "2026-05-14T09:00:00.000Z", "reason": "Dolor lumbar", "status": "CANCELLED", "createdByUserId": "u-recepcion", "createdAt": "2026-05-08T09:00:00.000Z", "updatedAt": "2026-05-13T09:00:00.000Z" },
+    { "id": "a-010", "patientId": "p-010", "doctorId": "d-rios", "specialtyId": "s-card", "scheduledAt": "2026-05-13T09:00:00.000Z", "reason": "Control cardiologico", "status": "NO_SHOW", "createdByUserId": "u-recepcion", "createdAt": "2026-05-07T09:00:00.000Z", "updatedAt": "2026-05-13T10:00:00.000Z" },
+    { "id": "a-011", "patientId": "p-001", "doctorId": "d-valeria", "specialtyId": "s-med", "scheduledAt": "2026-05-12T09:00:00.000Z", "reason": "Control laboratorio", "status": "LAB_PENDING", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-12T08:45:00.000Z", "createdAt": "2026-05-06T09:00:00.000Z", "updatedAt": "2026-05-12T10:00:00.000Z" },
+    { "id": "a-012", "patientId": "p-002", "doctorId": "d-valeria", "specialtyId": "s-med", "scheduledAt": "2026-05-11T09:00:00.000Z", "reason": "Revision resultados", "status": "LAB_COMPLETED", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-11T08:45:00.000Z", "createdAt": "2026-05-05T09:00:00.000Z", "updatedAt": "2026-05-11T11:00:00.000Z" },
+    { "id": "a-013", "patientId": "p-003", "doctorId": "d-vargas", "specialtyId": "s-derm", "scheduledAt": "2026-05-10T09:00:00.000Z", "reason": "Receta topica", "status": "PRESCRIPTION_PENDING", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-10T08:45:00.000Z", "createdAt": "2026-05-04T09:00:00.000Z", "updatedAt": "2026-05-10T10:30:00.000Z" },
+    { "id": "a-014", "patientId": "p-004", "doctorId": "d-rios", "specialtyId": "s-card", "scheduledAt": "2026-05-09T09:00:00.000Z", "reason": "Receta cronica", "status": "PRESCRIPTION_DISPENSED", "createdByUserId": "u-recepcion", "checkedInAt": "2026-05-09T08:45:00.000Z", "createdAt": "2026-05-03T09:00:00.000Z", "updatedAt": "2026-05-09T12:30:00.000Z" },
+    { "id": "a-015", "patientId": "p-005", "doctorId": "d-luna", "specialtyId": "s-ped", "scheduledAt": "2026-05-20T09:00:00.000Z", "reason": "Vacuna", "status": "SCHEDULED", "createdByUserId": "u-recepcion", "createdAt": "2026-05-17T09:00:00.000Z", "updatedAt": "2026-05-17T09:00:00.000Z" }
+  ],
+  "triageRecords": [
+    { "id": "t-003", "appointmentId": "a-003", "temperature": 36.8, "bloodPressureSystolic": 118, "bloodPressureDiastolic": 76, "heartRate": 80, "respiratoryRate": 18, "oxygenSaturation": 98, "weight": 62, "height": 1.62, "notes": "Paciente estable", "createdByUserId": "u-enfermeria", "createdAt": "2026-05-18T15:50:00.000Z" },
+    { "id": "t-004", "appointmentId": "a-004", "temperature": 36.6, "bloodPressureSystolic": 135, "bloodPressureDiastolic": 86, "heartRate": 92, "respiratoryRate": 19, "oxygenSaturation": 97, "weight": 78, "height": 1.72, "notes": "Refiere palpitaciones", "createdByUserId": "u-enfermeria", "createdAt": "2026-05-18T10:25:00.000Z" },
+    { "id": "t-005", "appointmentId": "a-005", "temperature": 38.1, "bloodPressureSystolic": 110, "bloodPressureDiastolic": 70, "heartRate": 100, "respiratoryRate": 22, "oxygenSaturation": 97, "weight": 48, "height": 1.5, "notes": "Fiebre moderada", "createdByUserId": "u-enfermeria", "createdAt": "2026-05-17T11:10:00.000Z" },
+    { "id": "t-006", "appointmentId": "a-006", "temperature": 36.4, "bloodPressureSystolic": 145, "bloodPressureDiastolic": 90, "heartRate": 84, "respiratoryRate": 18, "oxygenSaturation": 98, "weight": 82, "height": 1.75, "notes": "Presion elevada", "createdByUserId": "u-enfermeria", "createdAt": "2026-05-17T14:15:00.000Z" },
+    { "id": "t-007", "appointmentId": "a-007", "temperature": 36.5, "bloodPressureSystolic": 105, "bloodPressureDiastolic": 65, "heartRate": 76, "respiratoryRate": 17, "oxygenSaturation": 99, "weight": 40, "height": 1.42, "notes": "Sin signos de alarma", "createdByUserId": "u-enfermeria", "createdAt": "2026-05-16T09:15:00.000Z" }
+  ],
+  "consultations": [
+    { "id": "c-004", "appointmentId": "a-004", "doctorId": "d-rios", "reason": "Palpitaciones", "clinicalNotes": "Evaluacion cardiologica inicial.", "preliminaryDiagnosis": "Taquicardia en estudio", "treatmentPlan": "Solicitar ECG y control.", "status": "OPEN", "createdAt": "2026-05-18T10:40:00.000Z", "updatedAt": "2026-05-18T10:40:00.000Z" },
+    { "id": "c-005", "appointmentId": "a-005", "doctorId": "d-luna", "reason": "Fiebre", "clinicalNotes": "Cuadro viral probable.", "preliminaryDiagnosis": "Rinofaringitis", "treatmentPlan": "Hidratacion y antipiretico.", "status": "COMPLETED", "createdAt": "2026-05-17T11:30:00.000Z", "updatedAt": "2026-05-17T12:00:00.000Z" },
+    { "id": "c-006", "appointmentId": "a-006", "doctorId": "d-rios", "reason": "Control presion", "clinicalNotes": "Paciente con PA elevada.", "preliminaryDiagnosis": "Hipertension arterial", "treatmentPlan": "Ajuste de tratamiento.", "status": "COMPLETED", "createdAt": "2026-05-17T14:30:00.000Z", "updatedAt": "2026-05-17T15:20:00.000Z" },
+    { "id": "c-007", "appointmentId": "a-007", "doctorId": "d-luna", "reason": "Control pediatrico", "clinicalNotes": "Evolucion favorable.", "preliminaryDiagnosis": "Control sano", "treatmentPlan": "Seguimiento anual.", "status": "COMPLETED", "createdAt": "2026-05-16T09:30:00.000Z", "updatedAt": "2026-05-16T10:00:00.000Z" },
+    { "id": "c-008", "appointmentId": "a-008", "doctorId": "d-vargas", "reason": "Dermatitis", "clinicalNotes": "Lesiones compatibles con dermatitis.", "preliminaryDiagnosis": "Dermatitis atopica", "treatmentPlan": "Tratamiento topico.", "status": "COMPLETED", "createdAt": "2026-05-15T09:30:00.000Z", "updatedAt": "2026-05-15T10:00:00.000Z" }
+  ],
+  "labOrders": [
+    { "id": "lo-001", "appointmentId": "a-006", "consultationId": "c-006", "doctorId": "d-rios", "testName": "Perfil lipidico", "priority": "ROUTINE", "status": "PENDING", "requestedAt": "2026-05-17T14:45:00.000Z" },
+    { "id": "lo-002", "appointmentId": "a-004", "consultationId": "c-004", "doctorId": "d-rios", "testName": "Electrolitos", "priority": "URGENT", "status": "PENDING", "requestedAt": "2026-05-18T10:50:00.000Z" },
+    { "id": "lo-003", "appointmentId": "a-005", "consultationId": "c-005", "doctorId": "d-luna", "testName": "Hemograma", "priority": "ROUTINE", "status": "COMPLETED", "result": "Leucocitos dentro de rango esperado.", "requestedAt": "2026-05-17T11:45:00.000Z", "completedAt": "2026-05-17T13:00:00.000Z" },
+    { "id": "lo-004", "appointmentId": "a-008", "consultationId": "c-008", "doctorId": "d-vargas", "testName": "Prueba alergias", "priority": "ROUTINE", "status": "COMPLETED", "result": "Reactivo a polvo domestico.", "requestedAt": "2026-05-15T10:00:00.000Z", "completedAt": "2026-05-15T11:00:00.000Z" },
+    { "id": "lo-005", "appointmentId": "a-011", "consultationId": "c-005", "doctorId": "d-valeria", "testName": "Glucosa", "priority": "ROUTINE", "status": "PENDING", "requestedAt": "2026-05-12T10:00:00.000Z" },
+    { "id": "lo-006", "appointmentId": "a-012", "consultationId": "c-006", "doctorId": "d-valeria", "testName": "Creatinina", "priority": "ROUTINE", "status": "COMPLETED", "result": "Valor normal.", "requestedAt": "2026-05-11T09:40:00.000Z", "completedAt": "2026-05-11T10:30:00.000Z" },
+    { "id": "lo-007", "appointmentId": "a-013", "consultationId": "c-008", "doctorId": "d-vargas", "testName": "Cultivo piel", "priority": "ROUTINE", "status": "CANCELLED", "requestedAt": "2026-05-10T10:20:00.000Z" },
+    { "id": "lo-008", "appointmentId": "a-003", "consultationId": "c-005", "doctorId": "d-valeria", "testName": "Hemoglobina", "priority": "ROUTINE", "status": "PENDING", "requestedAt": "2026-05-18T16:10:00.000Z" }
+  ],
+  "labResults": [
+    { "id": "lr-003", "labOrderId": "lo-003", "result": "Leucocitos dentro de rango esperado.", "createdByUserId": "u-lab", "createdAt": "2026-05-17T13:00:00.000Z" },
+    { "id": "lr-004", "labOrderId": "lo-004", "result": "Reactivo a polvo domestico.", "createdByUserId": "u-lab", "createdAt": "2026-05-15T11:00:00.000Z" },
+    { "id": "lr-006", "labOrderId": "lo-006", "result": "Valor normal.", "createdByUserId": "u-lab", "createdAt": "2026-05-11T10:30:00.000Z" }
+  ],
+  "prescriptions": [
+    { "id": "rx-001", "appointmentId": "a-006", "consultationId": "c-006", "doctorId": "d-rios", "status": "PENDING", "items": [{ "medicationId": "m-001", "quantity": 1, "instructions": "Una tableta diaria" }], "createdAt": "2026-05-17T15:00:00.000Z" },
+    { "id": "rx-002", "appointmentId": "a-005", "consultationId": "c-005", "doctorId": "d-luna", "status": "DISPENSED", "items": [{ "medicationId": "m-002", "quantity": 1, "instructions": "Cada 8 horas si fiebre" }], "createdAt": "2026-05-17T12:00:00.000Z", "dispensedAt": "2026-05-17T12:30:00.000Z" },
+    { "id": "rx-003", "appointmentId": "a-008", "consultationId": "c-008", "doctorId": "d-vargas", "status": "DISPENSED", "items": [{ "medicationId": "m-006", "quantity": 2, "instructions": "Aplicar manana y noche" }], "createdAt": "2026-05-15T10:00:00.000Z", "dispensedAt": "2026-05-15T10:30:00.000Z" },
+    { "id": "rx-004", "appointmentId": "a-013", "consultationId": "c-008", "doctorId": "d-vargas", "status": "PENDING", "items": [{ "medicationId": "m-006", "quantity": 1, "instructions": "Aplicar por 7 dias" }], "createdAt": "2026-05-10T10:10:00.000Z" },
+    { "id": "rx-005", "appointmentId": "a-014", "consultationId": "c-006", "doctorId": "d-rios", "status": "DISPENSED", "items": [{ "medicationId": "m-001", "quantity": 1, "instructions": "Una tableta diaria" }], "createdAt": "2026-05-09T10:20:00.000Z", "dispensedAt": "2026-05-09T11:00:00.000Z" },
+    { "id": "rx-006", "appointmentId": "a-007", "consultationId": "c-007", "doctorId": "d-luna", "status": "CANCELLED", "items": [{ "medicationId": "m-003", "quantity": 1, "instructions": "Suspendida" }], "createdAt": "2026-05-16T10:10:00.000Z" }
+  ],
+  "medications": [
+    { "id": "m-001", "name": "Losartan 50 mg", "stock": 25, "unitPrice": 12.5, "active": true },
+    { "id": "m-002", "name": "Paracetamol 500 mg", "stock": 80, "unitPrice": 5, "active": true },
+    { "id": "m-003", "name": "Ibuprofeno 400 mg", "stock": 8, "unitPrice": 7.5, "active": true },
+    { "id": "m-004", "name": "Omeprazol 20 mg", "stock": 40, "unitPrice": 9, "active": true },
+    { "id": "m-005", "name": "Amoxicilina 500 mg", "stock": 16, "unitPrice": 18, "active": true },
+    { "id": "m-006", "name": "Hidrocortisona crema", "stock": 12, "unitPrice": 22, "active": true },
+    { "id": "m-007", "name": "Cetirizina 10 mg", "stock": 4, "unitPrice": 10, "active": true },
+    { "id": "m-008", "name": "Metformina 850 mg", "stock": 35, "unitPrice": 13, "active": true },
+    { "id": "m-009", "name": "Salbutamol inhalador", "stock": 3, "unitPrice": 28, "active": true },
+    { "id": "m-010", "name": "Diclofenaco gel", "stock": 0, "unitPrice": 16, "active": false }
+  ],
+  "stockMovements": [
+    { "id": "sm-001", "medicationId": "m-002", "quantity": 1, "type": "OUT", "reason": "Despacho receta rx-002", "createdByUserId": "u-farmacia", "createdAt": "2026-05-17T12:30:00.000Z" },
+    { "id": "sm-002", "medicationId": "m-006", "quantity": 2, "type": "OUT", "reason": "Despacho receta rx-003", "createdByUserId": "u-farmacia", "createdAt": "2026-05-15T10:30:00.000Z" },
+    { "id": "sm-003", "medicationId": "m-001", "quantity": 1, "type": "OUT", "reason": "Despacho receta rx-005", "createdByUserId": "u-farmacia", "createdAt": "2026-05-09T11:00:00.000Z" }
+  ],
+  "billingRecords": [
+    { "id": "b-005", "appointmentId": "a-005", "patientId": "p-005", "consultationAmount": 80, "labAmount": 35, "medicationAmount": 5, "discount": 0, "total": 120, "paidAmount": 0, "status": "PENDING", "createdAt": "2026-05-17T12:00:00.000Z" },
+    { "id": "b-006", "appointmentId": "a-006", "patientId": "p-006", "consultationAmount": 80, "labAmount": 35, "medicationAmount": 12.5, "discount": 0, "total": 127.5, "paidAmount": 50, "status": "PARTIAL", "createdAt": "2026-05-17T15:20:00.000Z" },
+    { "id": "b-007", "appointmentId": "a-007", "patientId": "p-007", "consultationAmount": 80, "labAmount": 0, "medicationAmount": 0, "discount": 0, "total": 80, "paidAmount": 80, "status": "PAID", "createdAt": "2026-05-16T10:00:00.000Z", "paidAt": "2026-05-16T11:20:00.000Z" },
+    { "id": "b-008", "appointmentId": "a-008", "patientId": "p-008", "consultationAmount": 80, "labAmount": 35, "medicationAmount": 44, "discount": 9, "total": 150, "paidAmount": 150, "status": "PAID", "createdAt": "2026-05-15T10:00:00.000Z", "paidAt": "2026-05-15T11:50:00.000Z" },
+    { "id": "b-011", "appointmentId": "a-011", "patientId": "p-001", "consultationAmount": 80, "labAmount": 35, "medicationAmount": 0, "discount": 0, "total": 115, "paidAmount": 0, "status": "PENDING", "createdAt": "2026-05-12T10:00:00.000Z" },
+    { "id": "b-012", "appointmentId": "a-012", "patientId": "p-002", "consultationAmount": 80, "labAmount": 35, "medicationAmount": 0, "discount": 0, "total": 115, "paidAmount": 115, "status": "PAID", "createdAt": "2026-05-11T10:00:00.000Z", "paidAt": "2026-05-11T11:00:00.000Z" }
+  ],
+  "payments": [
+    { "id": "pay-006", "billingRecordId": "b-006", "amount": 50, "method": "TARJETA", "createdByUserId": "u-caja", "createdAt": "2026-05-17T15:30:00.000Z" },
+    { "id": "pay-007", "billingRecordId": "b-007", "amount": 80, "method": "EFECTIVO", "createdByUserId": "u-caja", "createdAt": "2026-05-16T11:20:00.000Z" },
+    { "id": "pay-008", "billingRecordId": "b-008", "amount": 150, "method": "TRANSFERENCIA", "createdByUserId": "u-caja", "createdAt": "2026-05-15T11:50:00.000Z" },
+    { "id": "pay-012", "billingRecordId": "b-012", "amount": 115, "method": "EFECTIVO", "createdByUserId": "u-caja", "createdAt": "2026-05-11T11:00:00.000Z" }
+  ],
+  "auditLogs": [
+    { "id": "aud-001", "entityType": "Appointment", "entityId": "a-001", "action": "CREATE", "description": "Cita creada", "userId": "u-recepcion", "createdAt": "2026-05-16T10:00:00.000Z" },
+    { "id": "aud-002", "entityType": "Appointment", "entityId": "a-002", "action": "STATUS_CHANGE", "description": "Check-in realizado", "userId": "u-recepcion", "createdAt": "2026-05-18T14:45:00.000Z" },
+    { "id": "aud-003", "entityType": "TriageRecord", "entityId": "t-003", "action": "CREATE", "description": "Registro de triaje creado", "userId": "u-enfermeria", "createdAt": "2026-05-18T15:50:00.000Z" },
+    { "id": "aud-004", "entityType": "Consultation", "entityId": "c-005", "action": "COMPLETE", "description": "Consulta completada", "userId": "u-valeria", "createdAt": "2026-05-17T12:00:00.000Z" },
+    { "id": "aud-005", "entityType": "LabOrder", "entityId": "lo-003", "action": "COMPLETE", "description": "Resultado de laboratorio registrado", "userId": "u-lab", "createdAt": "2026-05-17T13:00:00.000Z" },
+    { "id": "aud-006", "entityType": "Prescription", "entityId": "rx-002", "action": "DISPENSE", "description": "Receta despachada", "userId": "u-farmacia", "createdAt": "2026-05-17T12:30:00.000Z" },
+    { "id": "aud-007", "entityType": "BillingRecord", "entityId": "b-006", "action": "PAYMENT", "description": "Pago registrado", "userId": "u-caja", "createdAt": "2026-05-17T15:30:00.000Z" },
+    { "id": "aud-008", "entityType": "Appointment", "entityId": "a-008", "action": "CLOSE", "description": "Atencion cerrada", "userId": "u-caja", "createdAt": "2026-05-15T12:00:00.000Z" },
+    { "id": "aud-009", "entityType": "Appointment", "entityId": "a-009", "action": "STATUS_CHANGE", "description": "Cita cancelada", "userId": "u-recepcion", "createdAt": "2026-05-13T09:00:00.000Z" },
+    { "id": "aud-010", "entityType": "Patient", "entityId": "p-001", "action": "CREATE", "description": "Paciente creado", "userId": "u-recepcion", "createdAt": "2026-05-01T09:00:00.000Z" },
+    { "id": "aud-011", "entityType": "Patient", "entityId": "p-002", "action": "CREATE", "description": "Paciente creado", "userId": "u-recepcion", "createdAt": "2026-05-02T09:00:00.000Z" },
+    { "id": "aud-012", "entityType": "LabOrder", "entityId": "lo-006", "action": "COMPLETE", "description": "Resultado de laboratorio registrado", "userId": "u-lab", "createdAt": "2026-05-11T10:30:00.000Z" },
+    { "id": "aud-013", "entityType": "Prescription", "entityId": "rx-005", "action": "DISPENSE", "description": "Receta despachada", "userId": "u-farmacia", "createdAt": "2026-05-09T11:00:00.000Z" },
+    { "id": "aud-014", "entityType": "BillingRecord", "entityId": "b-012", "action": "PAYMENT", "description": "Pago registrado", "userId": "u-caja", "createdAt": "2026-05-11T11:00:00.000Z" },
+    { "id": "aud-015", "entityType": "Appointment", "entityId": "a-010", "action": "STATUS_CHANGE", "description": "Marcada como no asistio", "userId": "u-recepcion", "createdAt": "2026-05-13T10:00:00.000Z" }
+  ],
+  "notifications": [
+    { "id": "n-001", "userId": "u-recepcion", "message": "Hay citas programadas para hoy.", "read": false, "createdAt": "2026-05-18T08:00:00.000Z" },
+    { "id": "n-002", "userId": "u-lab", "message": "Orden urgente pendiente.", "read": false, "createdAt": "2026-05-18T10:50:00.000Z" }
+  ]
+}

@@ -1,1 +1,514 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --navy: #0f2a43;
+  --navy-2: #123a5c;
+  --sky: #0ea5e9;
+  --sky-soft: #e0f2fe;
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --line: #d8e1ea;
+  --text: #172033;
+  --muted: #667085;
+  --danger: #b42318;
+  --warning: #b54708;
+  --success: #027a48;
+  --radius: 8px;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--navy-2);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button,
+.button,
+.secondary {
+  align-items: center;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+}
+
+button,
+.button {
+  background: var(--sky);
+  color: #fff;
+}
+
+.secondary {
+  background: #eef4f9;
+  color: var(--navy);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.danger {
+  background: #fee4e2;
+  color: var(--danger);
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--navy);
+  color: #fff;
+  padding: 22px 16px;
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.brand.large {
+  margin-bottom: 28px;
+}
+
+.brand-mark {
+  align-items: center;
+  background: var(--sky);
+  border-radius: 8px;
+  display: flex;
+  font-size: 20px;
+  font-weight: 900;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.brand span,
+.topbar span {
+  color: #b9d2e8;
+  display: block;
+  font-size: 13px;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 4px;
+}
+
+.sidebar a {
+  border-radius: 6px;
+  color: #dbeafe;
+  display: block;
+  padding: 11px 12px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background: var(--navy-2);
+  color: #fff;
+}
+
+.main {
+  min-width: 0;
+}
+
+.topbar {
+  align-items: center;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+  padding: 0 24px;
+}
+
+.topbar span {
+  color: var(--muted);
+}
+
+.content {
+  padding: 24px;
+}
+
+.page {
+  display: grid;
+  gap: 18px;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.page.narrow {
+  max-width: 860px;
+}
+
+.page-title {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--navy);
+  font-size: 28px;
+}
+
+h2 {
+  color: var(--navy);
+  font-size: 18px;
+}
+
+p,
+small,
+.empty-state span {
+  color: var(--muted);
+}
+
+.card,
+.login-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(15, 42, 67, 0.05);
+  padding: 18px;
+}
+
+.toolbar {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px;
+}
+
+input,
+select,
+textarea {
+  background: #fff;
+  border: 1px solid #c9d5e2;
+  border-radius: 6px;
+  color: var(--text);
+  font: inherit;
+  min-height: 40px;
+  padding: 9px 10px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  color: #344054;
+  display: grid;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 6px;
+}
+
+small {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stacked-form {
+  display: grid;
+  gap: 18px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.section-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.rows {
+  display: grid;
+  gap: 10px;
+}
+
+.inline-row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 150px 1fr auto;
+}
+
+.table-wrap {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 760px;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #edf2f7;
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background: #f8fafc;
+  color: #475467;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.detail-grid span {
+  color: var(--muted);
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.metric-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metric-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--sky);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.metric-card strong {
+  color: var(--navy);
+  display: block;
+  font-size: 34px;
+  margin-top: 10px;
+}
+
+.metric-card.warning {
+  border-left-color: var(--warning);
+}
+
+.metric-card.success {
+  border-left-color: var(--success);
+}
+
+.metric-card.info {
+  border-left-color: #2563eb;
+}
+
+.badge {
+  background: #eef4f9;
+  border-radius: 999px;
+  color: var(--navy);
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 9px;
+}
+
+.badge.scheduled,
+.badge.pending {
+  background: #fff7ed;
+  color: var(--warning);
+}
+
+.badge.checked-in,
+.badge.triage-done,
+.badge.in-consultation,
+.badge.partial {
+  background: var(--sky-soft);
+  color: #075985;
+}
+
+.badge.paid,
+.badge.closed,
+.badge.completed,
+.badge.dispensed,
+.badge.lab-pending {
+  /* Clinical status colors should remain calm. */
+  background: #dcfae6;
+  color: var(--success);
+}
+
+.badge.cancelled,
+.badge.no-show {
+  background: #fee4e2;
+  color: var(--danger);
+}
+
+.alert {
+  background: #fff1f3;
+  border: 1px solid #ffccd5;
+  border-radius: 6px;
+  color: var(--danger);
+  font-weight: 700;
+  padding: 12px;
+}
+
+.loading,
+.empty-state,
+.summary-strip {
+  background: var(--panel);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.empty-state {
+  display: grid;
+  gap: 6px;
+}
+
+.login-page {
+  align-items: center;
+  background: linear-gradient(135deg, #0f2a43, #14537a);
+  display: flex;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.login-panel {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 420px;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.login-copy {
+  align-self: center;
+  color: #fff;
+}
+
+.login-copy h1 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.08;
+  margin-bottom: 14px;
+}
+
+.login-copy p {
+  color: #dbeafe;
+  max-width: 560px;
+}
+
+.login-card {
+  display: grid;
+  gap: 16px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    bottom: 0;
+    left: -270px;
+    position: fixed;
+    top: 0;
+    transition: left 0.2s ease;
+    width: 250px;
+    z-index: 20;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .mobile-only {
+    display: inline-flex;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .form-grid,
+  .detail-grid,
+  .metric-grid,
+  .login-panel,
+  .inline-row {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title,
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* Compact tables should prioritize patient and doctor information. */
+  .table-wrap table th:nth-child(4),
+  .table-wrap table td:nth-child(4) {
+    display: none;
+  }
+
+  .topbar {
+    padding: 14px 16px;
+  }
+}

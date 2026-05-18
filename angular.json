@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "tpl-be-angular": {
+    "meditrack-angular-lab": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tpl-be-angular:build:production"
+              "buildTarget": "meditrack-angular-lab:build:production"
             },
             "development": {
-              "buildTarget": "tpl-be-angular:build:development"
+              "buildTarget": "meditrack-angular-lab:build:development"
             }
           },
           "defaultConfiguration": "development"

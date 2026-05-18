@@ -1,9 +1,11 @@
 {
-  "name": "tpl-be-angular",
+  "name": "meditrack-angular-lab",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0 --port 4200",
+    "api": "json-server --watch db.json --port 3000",
+    "dev": "concurrently \"npm run api\" \"npm start\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -36,6 +38,8 @@
     "@angular/build": "^21.1.5",
     "@angular/cli": "^21.1.5",
     "@angular/compiler-cli": "^21.1.0",
+    "concurrently": "^9.2.1",
+    "json-server": "^1.0.0-beta.3",
     "jsdom": "^27.1.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
