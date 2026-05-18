@@ -1,7 +1,5 @@
 # meditrack-angular-lab
 
-MediTrack Clinic es una aplicacion Angular academica para simular la gestion operativa de una clinica ambulatoria ficticia. No es un sistema medico real, no diagnostica pacientes y no debe usarse con datos reales.
-
 El objetivo del laboratorio es analizar el comportamiento del sistema, documentar hallazgos y proponer correcciones en un escenario empresarial con reglas de negocio cruzadas. Se recomienda probar con distintos roles, recorridos no felices, recargas del navegador, filtros persistidos y acciones criticas repetidas.
 
 ## Stack
